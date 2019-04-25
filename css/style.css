@@ -3,6 +3,8 @@ body, html{
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 body {
     background-color: #C2E6E4;
 }
@@ -67,13 +69,133 @@ h1 {
     font-weight: bold;
     font-size: 48px;
     margin-bottom: 40px;
+    text-align: center;
     
 }
 
 h1 span { 
     background: #C38D9D;
-    padding: 0 5px 8px;
+    padding: 0 5px 5px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-  }
+}
 
+p {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/* Main */
+
+#home {
+    height:calc(100vh - 100px);
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center
+}
+
+
+.main-title{
+    margin-top: 35px;
+}
+
+#pi{
+    margin: 20px;
+}
+
+/* About */
+
+#about{
+    margin-top: 50px;
+    text-align:center;
+}
+
+#about h1{
+    display: inline-block;
+}
+
+#pi-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+#about p{
+    margin-top: 0;
+    margin-bottom: 150px;
+    text-align: left;
+}
+
+/* Models */
+
+
+#models p {
+    text-align: center;
+}
+
+#models .description {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#models ul {
+    list-style: none;
+    display: inline-block;
+}
+
+#models li {
+    float: left;
+    width: 25%;
+    padding: 40px;
+}
+
+#models img{
+    width: 325px;
+}
+
+/* Setup*/
+
+#setup p {
+    width: 50%;
+    float: left;
+    margin-right: 100px;
+}
+
+#setup .setup{
+    float: right;
+    width: 50%;
+}
+
+/* buying */
+
+#buying {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#buying p {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#buying a {
+    background: #6F86FF;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 150px;
+    background: #959595;
+}
+
+footer p {
+    
+}

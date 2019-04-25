@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>The Pi Guide</title>
 	<link rel="stylesheet" href="./css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
 </head>
 <body>
 	<header>
@@ -23,18 +23,18 @@
 	</header>
 	<div class="container">
 		<div id="home">
-			<h1><span>So you want to learn more about the raspberry pi? well you came to the right place. </span></h1>
-			<img src="img/pi.png" alt="pi">
+			<h1 class="main-title"><span>So you want to learn more about the raspberry pi? well you came to the right place. </span></h1>
+			<img src="img/pi.png" alt="pi" id="pi">
 		</div>
 
 		<div id="about">
-			<h1><span>About the Pi </span></h1><img src="img/pi_logo.png" alt="pi logo">
-			<p>The Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries. According to the Raspberry Pi Foundation, more than 5 million Raspberry Pis were sold by February 2015, making it the best-selling British computer.</span></p>
+			<h1><span>About the Pi </span></h1><img src="img/pi_logo.png" alt="pi logo" id="pi-logo">
+			<p>Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries. According to the Raspberry Pi Foundation, more than 5 million Raspberry Pis were sold by February 2015, making it the best-selling British computer.</p>
 		</div>
 		
 		<div id="models">
 			<h1><span>Models</span></h1>
-			<p>Here are some of the most popular Raspberry Pi’s to get you started.</p>
+			<p class="description">Here are some of the most popular Raspberry Pi’s to get you started.</p>
 			<ul>
 				<li>
 					<p>
@@ -69,7 +69,7 @@
 		<div id="setup">
 			<h1><span>Setup</span></h1>
 			<p>First you need to have a bootable SD card. You can buy one online, or make one yourself <a href="https://www.raspberrypi.org/documentation/installation/installing-images/">(read more)</a>. Then you put the card in your Pi, and boot it up. You should see an installation guide, asking you which linux distro you wan’t to install. This totally depends on what you plan on using your Pi for. I’m currently rocking a Debian desktopless environment on my home server.</p>
-			<img src="img/setup.png" alt="setup">
+			<img src="img/setup.png" alt="setup" id="setup">
 		</div>
 		
 		<div id="buying">
