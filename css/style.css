@@ -13,6 +13,9 @@ body {
 
 header {
     background: #40B3A2;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .logo{
@@ -37,7 +40,7 @@ nav ul{
     list-style: none;
 
     margin-top: 20px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 nav li {
@@ -61,14 +64,16 @@ nav li a:hover{
 /*container*/
 
 .container{
+    top: 200px;
     width: 80%;
     margin:auto;
 }
 
 h1 {
+    padding-top: 150px;
     font-weight: bold;
     font-size: 48px;
-    margin-bottom: 40px;
+    
     text-align: center;
     
 }
@@ -85,7 +90,7 @@ p {
     font-size: 32px;
 }
 
-/* Main */
+/* Home */
 
 #home {
     height:calc(100vh - 100px);
@@ -106,7 +111,7 @@ p {
 /* About */
 
 #about{
-    margin-top: 50px;
+    margin-top: 10px;
     text-align:center;
 }
 
@@ -123,15 +128,16 @@ p {
 
 #about p{
     margin-top: 0;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     text-align: left;
 }
 
 /* Models */
 
 
-#models p {
+#models {
     text-align: center;
+    display: inline-block;
 }
 
 #models .description {
@@ -141,30 +147,44 @@ p {
 
 #models ul {
     list-style: none;
-    display: inline-block;
 }
 
 #models li {
-    float: left;
+    text-align: center;
     width: 25%;
     padding: 40px;
+    float: left;
 }
 
-#models img{
-    width: 325px;
+#models li img{
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Setup*/
 
+#setup {
+    overflow: hidden;
+    display: block;
+}
+
 #setup p {
     width: 50%;
     float: left;
-    margin-right: 100px;
+    margin-right: 1px;
 }
 
-#setup .setup{
+
+#setup img {
     float: right;
-    width: 50%;
+    width: 45%;
+    vertical-align: center;
+    margin-top: 50px;
+
+}
+
+#setup a {
+    text-decoration: none;
 }
 
 /* buying */
@@ -194,8 +214,47 @@ p {
 footer {
     margin-top: 150px;
     background: #959595;
+    text-align: center;
 }
 
 footer p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+    nav li {
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    nav li a {
+        font-size: 22px;
+        
+    }
+
+    #models li {
+        width: calc(33% - 40px);
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
+    #models ul {
+        text-align: center;
+    }
+
+
+    #models li p {
+        font-size: 26px;
+    }
+
+
+
 }
