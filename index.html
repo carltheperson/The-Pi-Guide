@@ -11,19 +11,21 @@
 <body>
 	<header>
 		<img src="img/logo.svg" alt="logo" class="logo">
+		<img src="img/burger.svg" alt="burger" class="burger">
 		<nav>
 			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About the Pi</a></li>
-				<li><a href="#models">Models</a></li>
-				<li><a href="#setup">Setup</a></li>
-				<li><a href="#buying">Where to buy</a></li>
+				<li><a href="#home" class="link">Home</a></li>
+				<li><a href="#about" class="link">About the Pi</a></li>
+				<li><a href="#models" class="link">Models</a></li>
+				<li><a href="#setup" class="link">Setup</a></li>
+				<li><a href="#buying" class="link">Where to buy</a></li>
+				<li><img src="img/logo_black.svg" alt="logo black" id="logo-black"></li>
 			</ul>
 		</nav>
 	</header>
 	<div class="container">
 		<div id="home">
-			<h1 class="main-title"><span>So you want to learn more about the raspberry pi? well you came to the right place. </span></h1>
+			<h1 class="main-title"><span>So you want to learn more about the raspberry pi? Well you came to the right place. </span></h1>
 			<img src="img/pi.png" alt="pi" id="pi">
 		</div>
 
@@ -69,7 +71,7 @@
 		
 		<div id="setup">
 			<h1><span>Setup</span></h1>
-			<p>First you need to have a bootable SD card. You can buy one online, or make one yourself <a href="https://www.raspberrypi.org/documentation/installation/installing-images/" target="_blank">(read more)</a>. Then you put the card in your Pi, and boot it up. You should see an installation guide, asking you which linux distro you wan’t to install. This totally depends on what you plan on using your Pi for. I’m currently rocking a Debian desktopless environment on my home server.</p>
+			<p>First you need to have a bootable SD card. You can buy one online, or make one yourself <a href="https://www.raspberrypi.org/documentation/installation/installing-images/" target="_blank">(read more)</a>. Then you put the card in your Pi, and boot it up. You should see an installation guide, asking you which linux distro you want to install. This totally depends on what you plan on using your Pi for. I’m currently rocking a Debian desktopless environment on my home server.</p>
 			<img src="img/setup.png" alt="setup">
 		</div>
 		
@@ -83,5 +85,28 @@
 	<footer>
 			<p>This is not an official guide. For an official guide visit www.raspberrypi.org.</p>
 	</footer>
+
+
+	<script>
+		(function(){
+			var menu = document.querySelector("ul"),
+				menulink = document.querySelector(".burger"),
+				link = document.getElementsByClassName("link");
+	   
+		menulink.addEventListener("click", function(e){
+				menu.classList.toggle("active");
+				e.preventDefault();
+		});
+
+
+		for (var i = 0; i < link.length; i++) {
+			link[i].addEventListener("click", function(e){
+					menu.classList.toggle("active");
+			});
+		}
+
+		})();
+	</script>
+
 </body>
 </html>
