@@ -3,18 +3,16 @@ body, html{
     font-family: 'Roboto', sans-serif;
 }
 
-
-
 body {
     background-color: #C2E6E4;
 }
-
-/* Header */
 
 .burger,
 #logo-black {
     display: none;
 }
+
+/* Header */
 
 header {
     background: #40B3A2;
@@ -45,12 +43,12 @@ nav ul{
     list-style: none;
 
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 0;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 50px;
     padding-top: 25px;
 }
 
@@ -114,6 +112,7 @@ p {
     margin-top: 60px;
     vertical-align:middle;
     width: 90%;
+    max-width: calc(100vh - 100px);
 }
 
 /* About */
@@ -141,7 +140,6 @@ p {
 }
 
 /* Models */
-
 
 #models {
     text-align: center;
@@ -192,6 +190,7 @@ p {
 
 #setup a {
     text-decoration: none;
+    color: #0083DD;
 }
 
 /* buying */
@@ -207,7 +206,7 @@ p {
 }
 
 #buying a {
-    background: #6F86FF;
+    background: #00A4F6;
     font-size: 50px;
     font-weight: bold;
     text-decoration: none;
@@ -236,8 +235,8 @@ footer p {
 
 @media only screen and (max-width: 1300px) {
 
-    nav li {
-        margin-left: 40px;
+    nav ul li {
+        margin-left: 35px;
     }
 
     nav li a {
@@ -265,9 +264,9 @@ footer p {
 
 
 @media only screen and (max-width: 1100px) {
-
+    /* Header */
     nav li {
-        margin-left: 25x;
+        margin-left: 25px;
 
         text-align: center;
         padding-top: 20px;
@@ -285,7 +284,8 @@ footer p {
 
 @media only screen and (max-width: 950px) {
 
-    nav li {
+    /* Header */
+    nav ul li {
         margin-left: 20px;
         padding-top: 15px;
     }
@@ -294,19 +294,32 @@ footer p {
         font-size: 16px;
     }
 
+    /* setup */
+
+    #setup p,
+    #setup img{
+        float: none;
+        width: 100%;
+        margin-top: 0; 
+    }
+
 }
 
+/* mobile */
 @media only screen and (max-width: 767px) {
     .container{
         float: none;
         width: 90%;
     }
 
-    header ul { 
-        display: none;
+    /* main page */
+    
+    .main-title{
+        margin-top: 150px;
+        font-size: 36px;
     }
 
-    /*nav bar*/
+    /*nav bar and header*/
 
 
     header nav li {
@@ -314,6 +327,10 @@ footer p {
         text-align: left;
         margin-top: 10px;
         padding-bottom: 50px;
+    }
+
+    header ul { 
+        display: none;
     }
 
     header ul a {
@@ -334,14 +351,14 @@ footer p {
 
     .active {
         margin: 0;
-        float: left;
+        float: none;
         position: fixed;
         display: block;
         background: #e27d60;
         width: 50%;
         left: 0;
-        top: 0;
-        height: 100%;
+        top: 103px;
+        height: calc(100% - 103px);
     }
 
     #logo-black{
@@ -359,20 +376,20 @@ footer p {
     #models li {
         text-align: center;
         width: 90%;
-        padding: 40px;
+        padding: 0;
+        margin-bottom: 20px;
         float: none;
     }
     
     #models li img{
         width: 65%;
     }
+}
 
-    /* setup */
-
-    #setup p,
-    #setup img{
-        float: none;
-        width: 100%;
-        margin-top: 0; 
+/* logo fix*/
+@media only screen and (max-height: 850px) {
+    #logo-black {
+        height: 15%;
     }
+
 }
